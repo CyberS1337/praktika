@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DataSet1" msprop:Generator_DataSetName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Поставщики" msprop:Generator_TableClassName="ПоставщикиDataTable" msprop:Generator_TableVarName="tableПоставщики" msprop:Generator_TablePropName="Поставщики" msprop:Generator_RowDeletingName="ПоставщикиRowDeleting" msprop:Generator_RowChangingName="ПоставщикиRowChanging" msprop:Generator_RowEvHandlerName="ПоставщикиRowChangeEventHandler" msprop:Generator_RowDeletedName="ПоставщикиRowDeleted" msprop:Generator_UserTableName="Поставщики" msprop:Generator_RowChangedName="ПоставщикиRowChanged" msprop:Generator_RowEvArgName="ПоставщикиRowChangeEvent" msprop:Generator_RowClassName="ПоставщикиRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Код_x0020_поставщика" msdata:AutoIncrement="true" msprop:Generator_ColumnVarNameInTable="columnКод_поставщика" msprop:Generator_ColumnPropNameInRow="Код_поставщика" msprop:Generator_ColumnPropNameInTable="Код_поставщикаColumn" msprop:Generator_UserColumnName="Код поставщика" type="xs:int" />
+              <xs:element name="Поставщик" msprop:Generator_ColumnVarNameInTable="columnПоставщик" msprop:Generator_ColumnPropNameInRow="Поставщик" msprop:Generator_ColumnPropNameInTable="ПоставщикColumn" msprop:Generator_UserColumnName="Поставщик" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Адрес_x0020_поставщика" msprop:Generator_ColumnVarNameInTable="columnАдрес_поставщика" msprop:Generator_ColumnPropNameInRow="Адрес_поставщика" msprop:Generator_ColumnPropNameInTable="Адрес_поставщикаColumn" msprop:Generator_UserColumnName="Адрес поставщика" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Телефон" msprop:Generator_ColumnVarNameInTable="columnТелефон" msprop:Generator_ColumnPropNameInRow="Телефон" msprop:Generator_ColumnPropNameInTable="ТелефонColumn" msprop:Generator_UserColumnName="Телефон" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Поставщики" />
+      <xs:field xpath="mstns:Код_x0020_поставщика" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
